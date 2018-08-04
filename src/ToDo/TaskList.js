@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Task from './Task'
-import PaperRefined from './../PaperRefined'
+import PaperRefined from './PaperRefined'
 
 const TaskList = (props) => (
     <PaperRefined>
@@ -11,6 +11,7 @@ const TaskList = (props) => (
                     <Task
                     key={task.key}
                     task={task}
+                    />
                 )
             )
         }
