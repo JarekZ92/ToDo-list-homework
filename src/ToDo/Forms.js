@@ -10,13 +10,13 @@ const Forms = (props) => (
         type={'text'}
         value={props.newTaskText}
         fullWidth={true}
-        onChange={props.onNewTaskTextChanged}
+        onChange={props.newTask}
         />
         <RaisedButton
         label= 'Add new task'
         primary={true}
         fullWidth={true}
-        onClick={props.onAddNewTaskClickHandler}
+        onClick={props.newTaskClickFunction}
         />
         </PaperRefined>
 )

@@ -22,6 +22,12 @@ class ToDo extends React.Component {
       ('toDo-state', JSON.stringify(this.state))
   }
 
+  newTask = (event) => {
+    this.setState({
+      newTaskText: event.target.value
+    })
+  }
+
   
 }
 
