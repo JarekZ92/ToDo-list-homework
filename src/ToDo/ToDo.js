@@ -1,4 +1,5 @@
 import React from "react";
+import Forms from "./Forms";
 
 class ToDo extends React.Component {
   state = {
@@ -26,6 +27,40 @@ class ToDo extends React.Component {
     this.setState({
       newTaskText: event.target.value
     })
+  }
+
+  newTaskClickFunction = (newTaskText) => {
+    if (this.state.newTaskText === '') {
+      return
+    }
+    this.setState({
+      task: this.state.tasks.concat(
+        {
+          isCompleted: false,
+          text: this.state.newTaskText,
+          key: Data.now()
+        }
+      ),
+      newTaskText: ''
+    })
+  }
+
+  return() {
+    return (
+      <div>
+        <Forms
+        newTaskText=
+        {this.state.newTaskText}
+        newTaskClickFunction=
+        {this.newTaskClickFunction}
+        newTaskClickFunction=
+        {this.state.newTaskClickFunction}
+        />
+        <List
+        taskList={this.state.tasks}
+        />
+        </div>
+    )
   }
 
   
