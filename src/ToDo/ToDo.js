@@ -24,3 +24,5 @@ class ToDo extends React.Component {
 
   
 }
+
+export default ToDo
