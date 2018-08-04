@@ -3,7 +3,7 @@ import React from 'react'
 import Task from './Task'
 import PaperRefined from './PaperRefined'
 
-const TaskList = (props) => (
+const List = (props) => (
     <PaperRefined>
         {
             props.taskList.map(
@@ -18,4 +18,4 @@ const TaskList = (props) => (
         </PaperRefined>
     )
 
-    export default TaskList
+    export default List

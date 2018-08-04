@@ -1,6 +1,6 @@
 import React from "react";
 import Forms from "./Forms";
-import Task from './Task'
+import List from './List';
 
 class ToDo extends React.Component {
   state = {
@@ -40,7 +40,7 @@ class ToDo extends React.Component {
         {
           isCompleted: false,
           text: this.state.newTaskText,
-          key: Data.now()
+          key: Date.now()
         }
       ),
       newTaskText: ''

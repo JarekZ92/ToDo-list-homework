@@ -7,10 +7,10 @@ const styles = {
     padding: '20px'
 }
 
-const PaperRefined = (props) => {
+const PaperRefined = (props) => (
     <Paper style={styles}>
     {props.children}
     </Paper>
-}
+)
 
 export default PaperRefined
