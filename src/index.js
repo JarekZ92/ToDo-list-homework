@@ -1,8 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import "./index.css";
+import App from "./App";
 
+ReactDOM.render(
+    <MuiThemeProvider>
+    <App />
+</MuiThemeProvider>,
+     document.getElementById('root')
+    )
