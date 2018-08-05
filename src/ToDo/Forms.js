@@ -1,7 +1,7 @@
 import React from 'react'
 
 import PaperRefined from './PaperRefined'
-import TextField from 'material-ui/TextField'
+import TextField from 'material-ui'
 import RaisedButton from 'material-ui/RaisedButton'
 
 const Forms = (props) => (

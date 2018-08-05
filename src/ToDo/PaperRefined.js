@@ -8,7 +8,9 @@ const styles = {
 }
 
 const PaperRefined = (props) => (
-    <Paper style={styles}>
+    <Paper
+     style={styles}
+     >
     {props.children}
     </Paper>
 )

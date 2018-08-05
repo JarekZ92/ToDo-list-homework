@@ -40,23 +40,23 @@ class ToDo extends React.Component {
         {
           isCompleted: false,
           text: this.state.newTaskText,
-          key: Date.now()
+          key: Math.random()
         }
       ),
       newTaskText: ''
     })
   }
 
-  return() {
+  render() {
     return (
       <div>
         <Forms
         newTaskText=
         {this.state.newTaskText}
+        newTask=
+        {this.newTask}
         newTaskClickFunction=
         {this.newTaskClickFunction}
-        newTaskClickFunction=
-        {this.state.newTaskClickFunction}
         />
         <List
         taskList={this.state.tasks}
@@ -64,8 +64,6 @@ class ToDo extends React.Component {
         </div>
     )
   }
-
-  
 }
 
 export default ToDo
